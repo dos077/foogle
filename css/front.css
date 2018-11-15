@@ -9,7 +9,7 @@ body {
 }
 div {	margin: 0; padding: 0; }
 div.clear { clear: both;}
-a {text-decoration: none; color:#000;}
+a {text-decoration: none; color:#000; margin: 0; padding: 0;}
 a:hover {text-decoration: underline}
 div.top {
 	position: absolute;
@@ -24,6 +24,7 @@ div.top .left{
 	position: absolute;
 	top: 5px;
 	left: 15px;
+	height: 32px;
 }
 div.top .left a{
 	font-size: 13px;
@@ -33,10 +34,19 @@ div.top .right {
 	position: absolute;
 	right: 15px;
 	top: 5px;
+	height: 32px;
 }
 div.top .right a {
 	font-size: 13px;
 	padding-right: 15px;
+	line-height: 32px;
+	display: block;
+	float: left;
+}
+div.top .right a img{
+	height: 20px;
+	width: 20px;
+	padding: 5px;
 }
 div.body {
 	width: 100%;
@@ -47,7 +57,8 @@ div.body {
 }
 div.logo {
 	width: 272px;
-	height: 201px;
+	height: 92px;
+	padding-top: 101px;
 	margin: 109px auto 20px;
 }
 div.input {
